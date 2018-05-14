@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -Wall -ffunction-sections -O0 -g -c -DSTM32F4XX -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -D__FPU_USED -DSTM32F407VG -I. -Icmsis_lib -Icmsis_lib\include -Icmsis_boot -Icmsis">
+      <target file="stm32f4xx_exti.o" lastModified="1635e55168a">
+         <source file="..\..\cmsis_lib\source\stm32f4xx_exti.c" lastModified="1635b2b9cc8"/>
+      </target>
+      <target file="stm32f4xx_gpio.o" lastModified="1635e550b7d">
+         <source file="..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="1635b25fe7f"/>
+      </target>
+      <target file="usbd_core.o" lastModified="1635e5505df">
+         <source file="..\..\usb_lib\core\usbd_core.c" lastModified="1635b3ec7f9"/>
+      </target>
+      <target file="usbd_desc.o" lastModified="1635e550a44">
+         <source file="..\..\usb_conf\usbd_desc.c" lastModified="1635b3ec7e9"/>
+      </target>
+      <target file="USART.o" lastModified="1635e551bba">
+         <source file="..\..\USART.c" lastModified="1635e50e108"/>
+      </target>
+      <target file="usbd_cdc_core.o" lastModified="1635e551561">
+         <source file="..\..\usb_lib\cdc\usbd_cdc_core.c" lastModified="1635b3d921c"/>
+      </target>
+      <target file="usbd_cdc_vcp.o" lastModified="1635e550cb5">
+         <source file="..\..\usb_lib\cdc\usbd_cdc_vcp.c" lastModified="1635b3b0bfa"/>
+      </target>
+      <target file="usbd_ioreq.o" lastModified="1635e551a33">
+         <source file="..\..\usb_lib\core\usbd_ioreq.c" lastModified="1635b321947"/>
+      </target>
+      <target file="stm32f4xx_syscfg.o" lastModified="1635e54fce6">
+         <source file="..\..\cmsis_lib\source\stm32f4xx_syscfg.c" lastModified="1635e2933e9"/>
+      </target>
+      <target file="startup_stm32f4xx.o" lastModified="1635e550255">
+         <source file="..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="1635b25fedd"/>
+      </target>
+      <target file="stm32f4xx_tim.o" lastModified="1635e551ea8">
+         <source file="..\..\cmsis_lib\source\stm32f4xx_tim.c" lastModified="1635e15ca6b"/>
+      </target>
+      <target file="system_stm32f4xx.o" lastModified="1635e550dee">
+         <source file="..\..\cmsis_boot\system_stm32f4xx.c" lastModified="1635b272f18"/>
+      </target>
+      <target file="usb_bsp.o" lastModified="1635e5510fb">
+         <source file="..\..\usb_conf\usb_bsp.c" lastModified="1635b31fa64"/>
+      </target>
+      <target file="misc.o" lastModified="1635e551793">
+         <source file="..\..\cmsis_lib\source\misc.c" lastModified="1635b2bb2d2"/>
+      </target>
+      <target file="stm32f4xx_dma.o" lastModified="1635e550fb3">
+         <source file="..\..\cmsis_lib\source\stm32f4xx_dma.c" lastModified="1635e161272"/>
+      </target>
+      <target file="usbd_req.o" lastModified="1635e551282">
+         <source file="..\..\usb_lib\core\usbd_req.c" lastModified="1635b3d922c"/>
+      </target>
+      <target file="usb_dcd.o" lastModified="1635e5518eb">
+         <source file="..\..\usb_lib\otg\usb_dcd.c" lastModified="1635b36cad9"/>
+      </target>
+      <target file="usb_dcd_int.o" lastModified="1635e551409">
+         <source file="..\..\usb_lib\otg\usb_dcd_int.c" lastModified="1635b3b0bdb"/>
+      </target>
+      <target file="stm32f4xx_rcc.o" lastModified="1635e55090c">
+         <source file="..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="1635b25fff6"/>
+      </target>
+      <target file="usb_core.o" lastModified="1635e54ff09">
+         <source file="..\..\usb_lib\otg\usb_core.c" lastModified="1635b3e03f5"/>
+      </target>
+      <target file="ws2812b.o" lastModified="1635e550478">
+         <source file="..\..\ws2812b.c" lastModified="1635e209e79"/>
+      </target>
+      <target file="usbd_usr.o" lastModified="1635e550013">
+         <source file="..\..\usb_conf\usbd_usr.c" lastModified="1635b3d923c"/>
+      </target>
+      <target file="main.o" lastModified="1635e550756">
+         <source file="..\..\main.c" lastModified="1635e54eb61"/>
+      </target>
+      <target file="stm32f4xx_usart.o" lastModified="1635e55018a">
+         <source file="..\..\cmsis_lib\source\stm32f4xx_usart.c" lastModified="1635b2c1817"/>
+      </target>
+   </processor>
+</history>
