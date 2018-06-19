@@ -5,6 +5,7 @@ Ambilight is a backgroundlight system, mounted on the display. We wrote our own 
 The first library which we used is STM32F4xx WS2812B library by Manik. The library is based on DMA, which transfers LED colour data directly into ODR register of the GPIO. Half of the GPIO peripheral is used (pins 0 to 7). Data is bursted via DMA on TIM1 Update trigger. 
 
 The second library which we used is Virtual COM Port (VCP) for STM32F4 from a website: https://stm32f4-discovery.net/2014/08/library-24-virtual-com-port-vcp-stm32f4xx/
+
 This library provides Virtual COM port on USB OTG. This means, that you don’t need external USB->UART converter (like FTDI) to communicate with computer. STM32F4xx will be seen to computer like COM port.  
 
 In the Visual Studio we used Windows API to read colors from the screen. In our application we use a bitmap. This solution was used to make the reaction to change colors faster.
@@ -35,7 +36,7 @@ Then you have to find out the COM number corresponding to your serial port, Open
 	//We're not yet connected
 	this->connected = false;
 
-	std::string port = **"COM4"**;
+	std::string port = "COM4";
 	std::wstring stemp = s2ws(port);
 	LPCWSTR portName = stemp.c_str();
 (...)
@@ -62,7 +63,7 @@ https://playground.arduino.cc/Interfacing/CPPWindows
 ## License
 MIT
 
-###### Credits
+## Credits
 Agata Błachowiak
 
 Sandra Bocian
