@@ -14,7 +14,7 @@ For Serial Communication we use library for Arduino (with some changes):
 https://playground.arduino.cc/Interfacing/CPPWindows
 
 ## Tools
-3x diodes WS2812B
+3x diodes WS2812B (connected in series; D0) -> PA0)
 
 STM32F4xx
 
@@ -28,6 +28,7 @@ MicroUSB
 
 
 ## How to run
+
 It’s easy. We connect the power supply and both USB cables to the computer.
 Then you have to find out the COM number corresponding to your serial port, Open Device Manager by right clicking on **My Computer** icon and selecting **Manage → Device Manager**. Under Ports(COM & LPT) you can see the parallel and serial ports (COM) detected by your system. You will see your STM as **“USB Serial Port (COM *number*)”**. In Visual Studio project in Serial() constructor you have to change port number for corresponding one. 
 
