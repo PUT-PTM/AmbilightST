@@ -1,5 +1,5 @@
 ## Overview
-Ambilight is a backgroundlight system, mounted on the display. We wrote our own software application to control and monitor the computer display. With the ambilight, it's possible to generate light in real-time that simulates the color palette on the computer display.
+Ambilight is a background light system, mounted on the display. We wrote our own software application to control and monitor the computer display. With the ambilight, it's possible to generate light in real-time that simulates the color palette on the computer display.
 
 ## Description
 The first library which we used is STM32F4xx WS2812B library by Manik. The library is based on DMA, which transfers LED colour data directly into ODR register of the GPIO. Half of the GPIO peripheral is used (pins 0 to 7). Data is bursted via DMA on TIM1 Update trigger. 
@@ -29,7 +29,8 @@ MicroUSB
 
 ## How to run
 
-It’s easy. We connect the power supply and both USB cables to the computer.
+It’s easy. We connect the power supply and both USB cables to the computer. 
+
 Then you have to find out the COM number corresponding to your serial port, Open Device Manager by right clicking on **My Computer** icon and selecting **Manage → Device Manager**. Under Ports(COM & LPT) you can see the parallel and serial ports (COM) detected by your system. You will see your STM as **“USB Serial Port (COM *number*)”**. In Visual Studio project in Serial() constructor you have to change port number for corresponding one. 
 
 Serial::Serial()
@@ -46,10 +47,10 @@ Serial::Serial()
 }
 
 
-After we enable in the Visual Studio an application that supports reading and calculating pixel values ​​for an image on the screen. And the result is a light that changes depending on the colors on the screen.
+Then compile and run VS project.
 
 ## How to compile
-You just have to run the project in a console of Visual Studio 2017.
+You just have to run the project in a console of Visual Studio.
 
 ## Future improvements
 We are thinking about using in the future LED strips that will create a frame around the monitor.
