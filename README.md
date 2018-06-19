@@ -31,8 +31,9 @@ MicroUSB
 It’s easy. We connect the power supply and both USB cables to the computer.
 Then you have to find out the COM number corresponding to your serial port, Open Device Manager by right clicking on **My Computer** icon and selecting **Manage → Device Manager**. Under Ports(COM & LPT) you can see the parallel and serial ports (COM) detected by your system. You will see your STM as **“USB Serial Port (COM *number*)”**. In Visual Studio project in Serial() constructor you have to change port number for corresponding one. 
 
-*Serial::Serial()
+Serial::Serial()
 {
+	
 	//We're not yet connected
 	this->connected = false;
 
@@ -40,7 +41,8 @@ Then you have to find out the COM number corresponding to your serial port, Open
 	std::wstring stemp = s2ws(port);
 	LPCWSTR portName = stemp.c_str();
 (...)
-}*
+}
+
 
 After we enable in the Visual Studio an application that supports reading and calculating pixel values ​​for an image on the screen. And the result is a light that changes depending on the colors on the screen.
 
