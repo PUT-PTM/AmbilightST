@@ -14,7 +14,7 @@ For Serial Communication we use library for Arduino (with some changes):
 https://playground.arduino.cc/Interfacing/CPPWindows
 
 ## Tools
-3x diodes WS2812B (connected in series; D0) -> PA0)
+3x diodes WS2812B (connected in series; DataOUT -> PA0)
 
 STM32F4xx
 
@@ -42,6 +42,7 @@ Serial::Serial()
 	std::wstring stemp = s2ws(port);
 	LPCWSTR portName = stemp.c_str();
 (...)
+
 }
 
 
@@ -75,4 +76,5 @@ Olga Kryspin
 
 
 The project was conducted during the Microprocessor Lab course held by the Institute of Control and Information Engineering, Poznan University of Technology.
+
 Supervisor: Tomasz Mańkowski
